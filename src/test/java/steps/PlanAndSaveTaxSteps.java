@@ -34,13 +34,14 @@ public class PlanAndSaveTaxSteps extends BaseSteps{
 
     @When("^I enter my CTC below 3 lakhs$")
     public void iEnterMyCTCBelow3Lakhs(){
-        new SaveTaxPage(getDriver()).setSeekBar(LOW);
+        new SaveTaxPage(getDriver()).setSeekBar(VERY_LOW);
         new SaveTaxPage(getDriver()).tapOnNextButton();
     }
 
     @When("^I enter my CTC above 3 lakhs$")
     public void iEnterMyCTCAbove3Lakhs(){
-        new SaveTaxPage(getDriver()).setSeekBar(HIGH);
+        new SaveTaxPage(getDriver()).setSeekBar(MID);
+        new SaveTaxPage(getDriver()).tapOnNextButton();
     }
 
     @Then("^I should be told that I am not taxable and \"Calculate Again\" button should get activated$")
@@ -48,6 +49,17 @@ public class PlanAndSaveTaxSteps extends BaseSteps{
         SaveTaxPage saveTaxPage = new SaveTaxPage(getDriver());
         pageBank.addPage(saveTaxPage);
         pageBank.getPage(SaveTaxPage.class).assertIfCalculateAgainIsDisplayed();
+    }
+
+    @Then("^I should be shown my estimated tax$")
+    public void iShouldBeShownMyEstimatedTax(){
+        SaveTaxPage saveTaxPage = new SaveTaxPage(getDriver());
+        pageBank.addPage(saveTaxPage);
+        String estimatedTax = pageBank.getPage(SaveTaxPage.class).getEstimatedTax();
+        pageBank.getPage(SaveTaxPage.class).tapOnNextButton();
+        pageBank.getPage(SaveTaxPage.class).tapOnMonthlyConveyanceAllowance();
+        pageBank.getPage(SaveTaxPage.class).tapOnMonthlyMedicalAllowance();
+        pageBank.getPage(SaveTaxPage.class).assertIfEstimatedTaxIsSameOnEveryPage(estimatedTax);
     }
 
 }

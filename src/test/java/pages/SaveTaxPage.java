@@ -102,9 +102,10 @@ public class SaveTaxPage extends BasePage {
         return estimatedTax.getText();
     }
 
-    public void assertIfEstimatedTaxIsSameOnEveryPage(WebElement estimatedTaxOnNextPage) {
+    public void assertIfEstimatedTaxIsSameOnEveryPage(String estimatedTaxOnNextPage) {
         waitForElementToBeVisible(estimatedTax);
-        Assert.assertSame(estimatedTax.getText(), estimatedTaxOnNextPage.getText());
+        Assert.assertEquals(estimatedTax.getText(), estimatedTaxOnNextPage);
+        System.out.println("Estimated tax same");
     }
 
     public void tapOnMonthlyConveyanceAllowance() {

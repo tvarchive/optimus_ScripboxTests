@@ -20,4 +20,4 @@ Feature: Advice on how to plan and save tax
   Scenario: User taxable since CTC above specified limits
     Given I tap on "Let's get started"
     When I enter my CTC above 3 lakhs
-#    Then I should be shown my estimated tax
+    Then I should be shown my estimated tax
