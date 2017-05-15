@@ -14,7 +14,7 @@ apply plugin: "com.testvagrant.featureCollector.plugin"
 
 featureTags {
     println System.getProperty("tags")
-    tags = System.getProperty("tags");
+    tags = System.getProperty("tags")
 }
 
 buildscript {

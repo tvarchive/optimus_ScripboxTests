@@ -11,6 +11,15 @@ public class HomePage extends BasePage {
     @FindBy(id = "toolbar")
     private WebElement toolbar;
 
+    @FindBy(xpath = "//android.widget.TextView[@text='Plan']")
+    private WebElement plan;
+
+    @FindBy(xpath = "//android.widget.TextView[@text='Learn']")
+    private WebElement learn;
+
+    @FindBy(xpath = "//android.widget.TextView[@text='Invest']")
+    private WebElement invest;
+
 
     private AppiumDriver driver;
 
@@ -25,4 +34,18 @@ public class HomePage extends BasePage {
         getElement(toolbar, By.xpath("//android.widget.ImageButton")).click();
     }
 
+    public void tapOnPlan(){
+        waitForElementToBeClickable(plan);
+        plan.click();
+    }
+
+    public void tapOnLearn(){
+        waitForElementToBeClickable(learn);
+        learn.click();
+    }
+
+    public void tapOnInvest(){
+        waitForElementToBeClickable(invest);
+        invest.click();
+    }
 }
