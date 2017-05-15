@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.SliderConstants;
 
 public class SaveTaxPage extends BasePage {
 
@@ -19,40 +20,101 @@ public class SaveTaxPage extends BasePage {
     private WebElement nextButton;
 
     @FindBy(id = "seek_bar")
-    private WebElement setCTC;
+    private WebElement seekBar;
+
+    @FindBy(id = "calculate_again")
+    private WebElement calculateAgain;
+
+    @FindBy(id = "switch_conveyance")
+    private WebElement switchConveyance;
+
+    @FindBy(id = "switch_medical")
+    private WebElement switchMedical;
+
+    @FindBy(id = "estimated_tax")
+    private WebElement estimatedTax;
 
     private AppiumDriver driver;
 
     public SaveTaxPage(AppiumDriver driver) {
         super(driver);
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    public void assertIfOnSaveTaxPage(){
-        Assert.assertEquals("HOW CAN I SAVE TAX",saveTaxHeader.getText());
+    public void assertIfOnSaveTaxPage() {
+        Assert.assertEquals("HOW CAN I SAVE TAX", saveTaxHeader.getText());
     }
 
-    public void tapOnLetsGetStarted(){
+    public void tapOnLetsGetStarted() {
         waitForElementToBeClickable(letsGetStarted);
         letsGetStarted.click();
     }
 
-    public void tapOnNextButton(){
+    public void tapOnNextButton() {
         waitForElementToBeClickable(nextButton);
         nextButton.click();
     }
 
-    public void setSalaryBelowThreeL(){
-       int xStartingPoint = setCTC.getLocation().getX();
-       int xEndingPoint = setCTC.getSize().getWidth();
-       int yStartingPoint = setCTC.getLocation().getY();
-       int yEndingPoint = setCTC.getSize().getHeight();
-       int xSingleCTCLength = xEndingPoint/30;
-       int xLastPointToGo = xSingleCTCLength*3;
-       TouchAction action = new TouchAction(driver);
-       waitForElementToBeClickable(setCTC);
-       action.longPress(xStartingPoint,yStartingPoint).moveTo(xLastPointToGo,yEndingPoint).release().perform();
+    public void setSeekBar(SliderConstants sliderConstant) {
+        waitForElementToBeVisible(seekBar);
+        int xStartingPoint = seekBar.getLocation().getX();
+        int xEndingPoint = seekBar.getSize().getWidth();
+        int yEndingPoint = seekBar.getLocation().getY();
+        int offset = 170;
+        int xMidPoint = xEndingPoint / 2 + offset;
+
+        switch (sliderConstant) {
+            case VERY_LOW:
+                slideSeekBar(xStartingPoint, yEndingPoint, xStartingPoint);
+                break;
+
+            case LOW:
+                slideSeekBar(xStartingPoint, yEndingPoint, (int) (xMidPoint*(0.5)));
+                break;
+
+            case MID:
+                slideSeekBar(xStartingPoint, yEndingPoint, xMidPoint);
+                break;
+
+            case HIGH:
+                slideSeekBar(xStartingPoint, yEndingPoint, (int) (xMidPoint+xMidPoint*(0.5)));
+                break;
+
+            case VERY_HIGH:
+                slideSeekBar(xStartingPoint, yEndingPoint, xMidPoint*2);
+                break;
+        }
+    }
+
+    private void slideSeekBar(int xStartingPoint, int yEndingPoint, int xMidPoint) {
+        TouchAction action = new TouchAction(driver);
+        waitForElementToBeClickable(seekBar);
+        action.longPress(xStartingPoint, yEndingPoint).moveTo(xMidPoint, yEndingPoint).release().perform();
+    }
+
+    public void assertIfCalculateAgainIsDisplayed() {
+        Assert.assertEquals(calculateAgain.getText(), "CALCULATE AGAIN!");
+    }
+
+    public String getEstimatedTax() {
+        waitForElementToBeVisible(estimatedTax);
+        return estimatedTax.getText();
+    }
+
+    public void assertIfEstimatedTaxIsSameOnEveryPage(WebElement estimatedTaxOnNextPage) {
+        waitForElementToBeVisible(estimatedTax);
+        Assert.assertSame(estimatedTax.getText(), estimatedTaxOnNextPage.getText());
+    }
+
+    public void tapOnMonthlyConveyanceAllowance() {
+        waitForElementToBeClickable(switchConveyance);
+        switchConveyance.click();
+    }
+
+    public void tapOnMonthlyMedicalAllowance() {
+        waitForElementToBeVisible(switchMedical);
+        switchMedical.click();
     }
 
 

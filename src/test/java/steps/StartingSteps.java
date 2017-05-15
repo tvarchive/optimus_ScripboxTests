@@ -9,6 +9,7 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.apache.commons.io.IOUtils;
 import utils.OptimusImpl;
+import utils.PageBank;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,6 +27,7 @@ public class StartingSteps extends BaseSteps {
         controller = new OptimusController(getAppJson(testFeed),getUniqueScenarioName(scenario));
         smartBOTs = controller.registerSmartBOTs();
         optimus = new OptimusImpl(having(smartBOTs));
+        pageBank = new PageBank();
     }
 
 
