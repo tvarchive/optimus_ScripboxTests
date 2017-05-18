@@ -19,7 +19,7 @@ to get started with your tests in the swiftest time possible. Read more about Op
      tab on the top right side.Under that you will find VM options.There you have
      to write the following :
 
-     `-DtestFeed=paytm -DrunMode=Fragmentation`
+     `-DtestFeed=scripbox -DrunMode=Fragmentation`
 
      After doing this, go to any of the feature files and right click on any
      scenario and select Run option.
