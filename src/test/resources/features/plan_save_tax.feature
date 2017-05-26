@@ -10,8 +10,8 @@ Feature: Advice on how to plan and save tax
     When I choose to plan and save tax
     Then I should be taken to "Plan and Save tax" page
 
-  @not-taxable
-  Scenario: User not taxable since CTC below specified limits
+  @taxable @fd
+  Scenario: User taxable CTC
     Given I tap on "Let's get started"
     When I enter my CTC below 3 lakhs
     Then I should be told that I am not taxable and "Calculate Again" button should get activated
@@ -21,3 +21,17 @@ Feature: Advice on how to plan and save tax
     Given I tap on "Let's get started"
     When I enter my CTC above 3 lakhs
     Then I should be shown my estimated tax
+
+
+  @non-taxable @retirement
+  Scenario: User not taxable since CTC below specified limits
+    Given I tap on "Let's get started"
+    When I enter my CTC below 3 lakhs
+    Then I should be told that I am not taxable and "Calculate Again" button should get activated
+
+
+  @sip @taxable
+  Scenario: Taxable SIP
+    Given I tap on "Let's get started"
+    When I enter my CTC below 3 lakhs
+    Then I should be told that I am not taxable and "Calculate Again" button should get activated

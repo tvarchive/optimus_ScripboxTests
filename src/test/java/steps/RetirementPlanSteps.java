@@ -34,7 +34,7 @@ public class RetirementPlanSteps extends BaseSteps{
         retirementPage.tapOnLetsGetStarted();
     }
 
-    @When("^I enter the required relevant details$")
+   /* @When("^I enter the required relevant details$")
     public void iEnterTheRelevantDetails(){
         RetirementPage retirementPage = new RetirementPage(getDriver());
         retirementPage.setAge(24);
@@ -43,7 +43,7 @@ public class RetirementPlanSteps extends BaseSteps{
         retirementPage.tapOnNextButton();
         retirementPage.tapOnIHaveMore();
         retirementPage.tapOnNextButton();
-    }
+    }*/
 
     @Then("^I should be given advice regarding my plan$")
     public void iShouldBeGivenAdviceRegardingMyPlan(){

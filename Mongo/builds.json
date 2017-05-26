@@ -1,0 +1,7 @@
+{
+	"_id" : ObjectId("592570fac263fffb5e6d2104"),
+	"buildEndTime" : ISODate("2017-05-24T17:12:47.336+05:30"),
+	"buildStartTime" : ISODate("2017-05-24T17:09:38.579+05:30"),
+	"scenariosCount" : NumberInt("1"),
+	"scenarioSuccessRate" : "100.0"
+},

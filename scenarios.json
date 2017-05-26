@@ -1,0 +1,44 @@
+{
+	"_id" : ObjectId("59255662c263ff2a6437c088"),
+	"completed" : true,
+	"device_name" : "ZY2236XBB4",
+	"end_time" : ISODate("2017-05-24T15:16:43.613+05:30"),
+	"scenario_name" : "advice-on-how-to-plan-and-save-tax;user-taxable-since-ctc-above-specified-limits",
+	"start_time" : ISODate("2017-05-24T15:16:10.211+05:30"),
+	"status" : "passed",
+	"tags" : "[\"@taxable\"]",
+	"time_taken" : NumberInt("33")
+},
+{
+	"_id" : ObjectId("5925566bc263ff2a61fdb5a3"),
+	"completed" : true,
+	"device_name" : "HGEPX64G",
+	"end_time" : ISODate("2017-05-24T15:17:14.166+05:30"),
+	"scenario_name" : "advice-on-how-to-plan-and-save-tax;user-taxable-since-ctc-above-specified-limits",
+	"start_time" : ISODate("2017-05-24T15:16:19.745+05:30"),
+	"status" : "passed",
+	"tags" : "[\"@taxable\"]",
+	"time_taken" : NumberInt("54")
+},
+{
+	"_id" : ObjectId("59255671c263ff2a63ac6734"),
+	"completed" : true,
+	"device_name" : "ae544f54",
+	"end_time" : ISODate("2017-05-24T15:17:04.599+05:30"),
+	"scenario_name" : "advice-on-how-to-plan-and-save-tax;user-taxable-since-ctc-above-specified-limits",
+	"start_time" : ISODate("2017-05-24T15:16:25.098+05:30"),
+	"status" : "passed",
+	"tags" : "[\"@taxable\"]",
+	"time_taken" : NumberInt("39")
+},
+{
+	"_id" : ObjectId("59255683c263ff2a622a0823"),
+	"completed" : true,
+	"device_name" : "77329b70",
+	"end_time" : ISODate("2017-05-24T15:18:00.790+05:30"),
+	"scenario_name" : "advice-on-how-to-plan-and-save-tax;user-taxable-since-ctc-above-specified-limits",
+	"start_time" : ISODate("2017-05-24T15:16:43.106+05:30"),
+	"status" : "passed",
+	"tags" : "[\"@taxable\"]",
+	"time_taken" : NumberInt("77")
+},
