@@ -1,0 +1,44 @@
+{
+  "apps": [
+    {
+      "app": "scripbox.apk",
+      "elements": [
+        {
+          "name": "menu",
+          "screen": "home",
+          "identifier": "xpath",
+          "value": "//android.widget.ImageButton[@index=0]",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "login",
+          "screen": "menu",
+          "identifier": "xpath",
+          "value": "//android.widget.CheckedTextView[@text='Login']",
+          "waitFor": "presence"
+        },
+        {
+          "name": "email",
+          "screen": "login",
+          "identifier": "id",
+          "value": "login_register_email",
+          "waitFor": "presence"
+        },
+        {
+          "name": "password",
+          "screen": "login",
+          "identifier": "id",
+          "value": "login_register_password",
+          "waitFor": "presence"
+        },
+        {
+          "name": "next",
+          "screen": "login",
+          "identifier": "id",
+          "value": "next_button_to_check_email_type",
+          "waitFor": "presence"
+        }
+      ]
+    }
+  ]
+}

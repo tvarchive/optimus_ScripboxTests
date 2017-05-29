@@ -61,24 +61,4 @@ public class StartingSteps extends BaseSteps {
     }
 
 
-    private String getUniqueScenarioName(Scenario scenario) {
-        ArrayList<String> scenariosList = new ArrayList<String>();
-        String uniqueScenarioName;
-        String scenarioName = scenario.getName();
-        int frequency = 1;
-        if (scenariosList.contains(scenarioName)) {
-            frequency = Collections.frequency(scenariosList, scenarioName);
-            ++frequency;
-        }
-        if (frequency >= 1) {
-            uniqueScenarioName = scenarioName + frequency;
-        } else {
-            uniqueScenarioName = scenarioName;
-        }
-        uniqueScenarioName = uniqueScenarioName.toUpperCase().replace(" ", "_").replace("-", "_");
-        scenariosList.add(uniqueScenarioName);
-        uniqueScenarioName = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.LOWER_CAMEL, uniqueScenarioName);
-        System.out.println(uniqueScenarioName);
-        return uniqueScenarioName;
-    }
 }
