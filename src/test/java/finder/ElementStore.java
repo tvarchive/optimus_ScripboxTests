@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ElementStore {
 
@@ -38,11 +40,13 @@ public class ElementStore {
         List<App> apps = uiElement.getApps();
         App aut = apps.stream().filter(app -> app.getApp().equalsIgnoreCase(appName)).findFirst().get();
 
-        return aut.getElements().stream()
+        Stream<Element> elementStream = aut.getElements().stream()
                 .filter(element -> element.getName().equalsIgnoreCase(fieldName))
-                .filter(element -> element.getScreen().equalsIgnoreCase(screen))
-                .findFirst().get();
+                .filter(element -> element.getScreen().equalsIgnoreCase(screen));
 
-
+        List<Element> elementList = elementStream.collect(Collectors.toList());
+        if (elementList.size() == 0)
+            throw new RuntimeException("No elements found in store for = " + fieldName);
+        return elementList.get(0);
     }
 }
