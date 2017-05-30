@@ -13,4 +13,11 @@ Feature: Advice on how to plan and save tax
     And user on login screen types mayank.gupta804@gmail.com into email
     And user on login screen taps on next
     And user on login screen types dcba4321 into password
+    And user on login screen clicks login
+    And user on home screen taps on plan
+    And user on planning screen taps on saveTaxCard
+
+    And user on saveTax screen taps on letsGetStarted
+    And user on saveTax screen slides annualCTC to 10%
+    And user on saveTax screen taps on next
 

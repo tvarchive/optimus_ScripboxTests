@@ -37,6 +37,34 @@
           "identifier": "id",
           "value": "next_button_to_check_email_type",
           "waitFor": "presence"
+        },
+        {
+          "name": "login",
+          "screen": "login",
+          "identifier": "id",
+          "value": "login_register_submit",
+          "waitFor": "presence"
+        },
+        {
+          "name": "plan",
+          "screen": "home",
+          "identifier": "xpath",
+          "value": "//android.widget.TextView[@text='Plan']",
+          "waitFor": "presence"
+        },
+        {
+          "name": "saveTaxCard",
+          "screen": "planning",
+          "identifier": "id",
+          "value": "save_tax_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "letsGetStarted",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "next_button_for_tax_step1",
+          "waitFor": "presence"
         }
       ]
     }
