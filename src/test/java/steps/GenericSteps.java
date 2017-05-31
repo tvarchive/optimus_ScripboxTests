@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 import finder.OptimusElementFinder;
 import org.openqa.selenium.WebElement;
+import utils.SlideController;
 
 public class GenericSteps extends BaseSteps implements En {
     public GenericSteps() {
@@ -24,7 +25,7 @@ public class GenericSteps extends BaseSteps implements En {
         });
         And("^(.*) on (.*) screen slides (.*) to (\\d+)%$", (String appConsumer, String screenName, String fieldName, Integer slideByPercentage) -> {
             WebElement webElement = new OptimusElementFinder(getDriverInstanceFor(appConsumer)).find(appConsumer, fieldName, screenName);
-//           new SlideControl(webElement).slideBy(slideByPercentage)
+            new SlideController(webElement,getDriverInstanceFor(appConsumer)).slideBy(slideByPercentage);
         });
     }
 }

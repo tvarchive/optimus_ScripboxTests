@@ -65,6 +65,117 @@
           "identifier": "id",
           "value": "next_button_for_tax_step1",
           "waitFor": "presence"
+        },
+        {
+          "name": "annualCTC",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButton",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "next_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "switchConveyance",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "switch_conveyance",
+          "waitFor": "presence"
+        },
+        {
+          "name": "switchMedical",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "switch_medical",
+          "waitFor": "presence"
+        },
+        {
+          "name": "rent",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "hra",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "epf",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "homeLoan",
+          "screen": "saveTax",
+          "identifier": "id",
+          "value": "switch_loan",
+          "waitFor": "presence"
+        },{
+          "name": "retirementCard",
+          "screen": "planning",
+          "identifier": "id",
+          "value": "retirement_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "plus",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "plus",
+          "waitFor": "presence"
+        },
+        {
+          "name": "minus",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "minus",
+          "waitFor": "presence"
+        },
+        {
+          "name": "letsGetStarted",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "lets_get_started_button_retirement_calculator",
+          "waitFor": "presence"
+        },
+        {
+          "name": "age",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButton",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "next_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "familyIncome",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "ihaveMore",
+          "screen": "retirement",
+          "identifier": "id",
+          "value": "i_have_more",
+          "waitFor": "presence"
         }
       ]
     }

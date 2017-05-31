@@ -46,19 +46,17 @@ public class PlanAndSaveTaxSteps extends BaseSteps {
     @Then("^I should be told that I am not taxable and \"Calculate Again\" button should get activated$")
     public void iShouldBeToldThatIAmNotTaxable() {
         SaveTaxPage saveTaxPage = new SaveTaxPage(getDriver());
-        pageBank.addPage(saveTaxPage);
-        pageBank.getPage(SaveTaxPage.class).assertIfCalculateAgainIsDisplayed();
+        saveTaxPage.assertIfCalculateAgainIsDisplayed();
     }
 
     @Then("^I should be shown my estimated tax$")
     public void iShouldBeShownMyEstimatedTax() {
         SaveTaxPage saveTaxPage = new SaveTaxPage(getDriver());
-        pageBank.addPage(saveTaxPage);
-        String estimatedTax = pageBank.getPage(SaveTaxPage.class).getEstimatedTax();
-        pageBank.getPage(SaveTaxPage.class).tapOnNextButton();
-        pageBank.getPage(SaveTaxPage.class).tapOnMonthlyConveyanceAllowance();
-        pageBank.getPage(SaveTaxPage.class).tapOnMonthlyMedicalAllowance();
-        pageBank.getPage(SaveTaxPage.class).assertIfEstimatedTaxIsSameOnEveryPage(estimatedTax);
+        String estimatedTax = saveTaxPage.getEstimatedTax();
+        saveTaxPage.tapOnNextButton();
+        saveTaxPage.tapOnMonthlyConveyanceAllowance();
+        saveTaxPage.tapOnMonthlyMedicalAllowance();
+        saveTaxPage.assertIfEstimatedTaxIsSameOnEveryPage(estimatedTax);
     }
 
     @When("^I enter the required relevant details$")
