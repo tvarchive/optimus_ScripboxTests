@@ -176,6 +176,104 @@
           "identifier": "id",
           "value": "i_have_more",
           "waitFor": "presence"
+        },
+        {
+          "name": "childEducationCard",
+          "screen": "planning",
+          "identifier": "id",
+          "value": "child_education_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "letsGetStarted",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "next_button_edu_calc_activity",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButton",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "ec_key_elements_next_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "oneChild",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_count_one",
+          "waitFor": "presence"
+        },
+        {
+          "name": "twoChildren",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_count_two",
+          "waitFor": "presence"
+        },
+        {
+          "name": "threeChildren",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_count_three",
+          "waitFor": "presence"
+        },
+        {
+          "name": "child1Age",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_1_age_seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "child2Age",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_2_age_seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "child3Age",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_3_age_seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButtonChildAge",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_age_selector_fragment_next_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "collegeOverseasForChildOne",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_one_switch",
+          "waitFor": "presence"
+        },
+        {
+          "name": "collegeOverseasForChildTwo",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_two_switch",
+          "waitFor": "presence"
+        },
+        {
+          "name": "collegeOverseasForChildThree",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "child_three_switch",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButtonOverseas",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "overseas_detail_selector_next_button",
+          "waitFor": "presence"
         }
       ]
     }
