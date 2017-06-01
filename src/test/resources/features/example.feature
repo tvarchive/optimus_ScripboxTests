@@ -39,13 +39,13 @@ Feature: Advice on how to plan and save tax
     And user on retirement screen taps on letsGetStarted
     And user on retirement screen slides age to 50%
     And user on retirement screen taps on nextButton
-    And user on retirement screen slides familyIncome to 90%
+    And user on retirement screen slides familyIncome to 50%
     And user on retirement screen taps on nextButton
     And user on retirement screen taps on iHaveMore
     And user on retirement screen taps on nextButton
 
-    @children_edu
-    Scenario: generic step example 3
+  @children_edu
+  Scenario: generic step example 3
     And user on planning screen taps on childEducationCard
     And user on childEducation screen taps on letsGetStarted
     And user on childEducation screen taps on nextButton
@@ -59,3 +59,57 @@ Feature: Advice on how to plan and save tax
     And user on childEducation screen taps on collegeOverseasForChildTwo
     And user on childEducation screen taps on collegeOverseasForChildThree
     And user on childEducation screen taps on nextButtonOverseas
+    And user on childEducation screen taps on scienceSubjectForChildOne
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on childEducation screen taps on artsSubjectForChildTwo
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on childEducation screen taps on businessSubjectForChildThree
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on ChildEducation screen taps on savingSwitch
+    And user on childEducation screen slides savingSlider to 60%
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on childEducation screen taps on nextButtonChildAge
+    And user on childEducation screen taps on goToInvestButton
+    And user on login screen types dcba4321 into password
+
+  @health
+  Scenario: generic step example 4
+    And user on planning screen taps on healthCard
+    And user on health screen taps on letsGetStarted
+    And user on health screen taps on age
+    And user on health screen taps on city
+    And user on health screen taps on savingPercentage
+    And user on health screen taps on longTermInvestment
+    And user on health screen taps on shortTermInvestment
+    And user on health screen taps on insurance
+    And user on health screen taps on savingTax
+    And user on health screen taps on nextButton
+    And user on health screen taps on nextButton
+
+  @invest_money
+  Scenario: generic step example 5
+    And user on planning screen taps on investMoneyCard
+    And user on investMoney screen taps on letsGetStarted
+    And user on investMoney screen taps on investMoneyEveryMonth
+    And user on investMoney screen slides investSlider to 70%
+    And user on investMoney screen taps on years
+    And user on investMoney screen slides yearSlider to 0%
+    And user on investMoney screen taps on nextButton
+    And user on investMoney screen taps on nextButton
+    And user on investMoney screen taps on nextButton
+    And user on investMoney screen taps on next
+    And user on investMoney screen taps on next
+    And user on investMoney screen taps on showMeButton
+
+
+
+
+
+
+
+
+
+
+
+

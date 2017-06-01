@@ -121,7 +121,8 @@
           "identifier": "id",
           "value": "switch_loan",
           "waitFor": "presence"
-        },{
+        },
+        {
           "name": "retirementCard",
           "screen": "planning",
           "identifier": "id",
@@ -273,6 +274,181 @@
           "screen": "childEducation",
           "identifier": "id",
           "value": "overseas_detail_selector_next_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "scienceSubjectForChildOne",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "science_stream",
+          "waitFor": "presence"
+        },
+        {
+          "name": "artsSubjectForChildTwo",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "arts_stream",
+          "waitFor": "presence"
+        },
+        {
+          "name": "businessSubjectForChildThree",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "business_stream",
+          "waitFor": "presence"
+        },
+        {
+          "name": "savingSwitch",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "mySwitch",
+          "waitFor": "presence"
+        },
+        {
+          "name": "savingSlider",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "goToInvestButton",
+          "screen": "childEducation",
+          "identifier": "id",
+          "value": "go_to_myscripbox_button",
+          "waitFor": "presence"
+        },
+        {
+          "name": "healthCard",
+          "screen": "planning",
+          "identifier": "id",
+          "value": "wealth_check_up_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "letsGetStarted",
+          "screen": "health",
+          "identifier": "id",
+          "value": "lets_get_started_button_compare_step0",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButton",
+          "screen": "health",
+          "identifier": "id",
+          "value": "lets_get_started_button_compare_step0",
+          "waitFor": "presence"
+        },
+        {
+          "name": "age",
+          "screen": "health",
+          "identifier": "id",
+          "value": "age_20_to_30",
+          "waitFor": "presence"
+        },
+        {
+          "name": "city",
+          "screen": "health",
+          "identifier": "id",
+          "value": "top_metros",
+          "waitFor": "presence"
+        },
+        {
+          "name": "savingPercentage",
+          "screen": "health",
+          "identifier": "id",
+          "value": "twenty_thirty_percent",
+          "waitFor": "presence"
+        },
+        {
+          "name": "longTermInvestment",
+          "screen": "health",
+          "identifier": "id",
+          "value": "long_term_fixed_deposit",
+          "waitFor": "presence"
+        },
+        {
+          "name": "shortTermInvestment",
+          "screen": "health",
+          "identifier": "id",
+          "value": "short_term_debt_mutual_funds",
+          "waitFor": "presence"
+        },
+        {
+          "name": "insurance",
+          "screen": "health",
+          "identifier": "id",
+          "value": "insurance_yes",
+          "waitFor": "presence"
+        },
+        {
+          "name": "savingTax",
+          "screen": "health",
+          "identifier": "id",
+          "value": "life_insurance",
+          "waitFor": "presence"
+        },
+        {
+          "name": "investMoneyCard",
+          "screen": "planning",
+          "identifier": "id",
+          "value": "compare_investment_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "investMoneyEveryMonth",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "sip_card",
+          "waitFor": "presence"
+        },
+        {
+          "name": "investSlider",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "seek_bar",
+          "waitFor": "presence"
+        },
+        {
+          "name": "nextButton",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "lets_get_started_button_compare_step0",
+          "waitFor": "presence"
+        },
+        {
+          "name": "letsGetStarted",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "lets_get_started_button_compare_step0",
+          "waitFor": "presence"
+        },
+        {
+          "name": "years",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "sip_tenure",
+          "waitFor": "presence"
+        },
+        {
+          "name": "yearSlider",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "picker",
+          "waitFor": "presence"
+        },
+        {
+          "name": "next",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "next_button_compare_step5",
+          "waitFor": "presence"
+        },
+        {
+          "name": "showMeButton",
+          "screen": "investMoney",
+          "identifier": "id",
+          "value": "show_me_more_compare_step5",
           "waitFor": "presence"
         }
       ]

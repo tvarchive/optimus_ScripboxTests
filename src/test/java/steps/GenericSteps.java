@@ -25,7 +25,8 @@ public class GenericSteps extends BaseSteps implements En {
         });
         And("^(.*) on (.*) screen slides (.*) to (\\d+)%$", (String appConsumer, String screenName, String fieldName, Integer slideByPercentage) -> {
             WebElement webElement = new OptimusElementFinder(getDriverInstanceFor(appConsumer)).find(appConsumer, fieldName, screenName);
-            new SlideController(webElement,getDriverInstanceFor(appConsumer)).slideBy(slideByPercentage);
+            new SlideController(webElement, getDriverInstanceFor(appConsumer)).slideBy(slideByPercentage);
         });
+
     }
 }
