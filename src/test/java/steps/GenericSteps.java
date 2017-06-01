@@ -1,10 +1,10 @@
 package steps;
 
-import cucumber.api.PendingException;
+import com.testvagrant.optimus.finder.OptimusElementFinder;
+import com.testvagrant.optimus.finder.SlideController;
+import com.testvagrant.optimus.steps.BaseSteps;
 import cucumber.api.java8.En;
-import finder.OptimusElementFinder;
 import org.openqa.selenium.WebElement;
-import utils.SlideController;
 
 public class GenericSteps extends BaseSteps implements En {
     public GenericSteps() {
@@ -27,6 +27,5 @@ public class GenericSteps extends BaseSteps implements En {
             WebElement webElement = new OptimusElementFinder(getDriverInstanceFor(appConsumer)).find(appConsumer, fieldName, screenName);
             new SlideController(webElement, getDriverInstanceFor(appConsumer)).slideBy(slideByPercentage);
         });
-
     }
 }
