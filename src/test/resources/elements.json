@@ -11,6 +11,13 @@
           "waitFor": "visibility"
         },
         {
+          "name": "learn",
+          "screen": "home",
+          "identifier": "xpath",
+          "value": "//android.widget.TextView[@text='Learn']",
+          "waitFor": "visibility"
+        },
+        {
           "name": "login",
           "screen": "menu",
           "identifier": "xpath",
@@ -449,6 +456,20 @@
           "screen": "investMoney",
           "identifier": "id",
           "value": "show_me_more_compare_step5",
+          "waitFor": "presence"
+        },
+        {
+          "name": "servicesAgreement",
+          "screen": "menu",
+          "identifier": "xpath",
+          "value": "//android.widget.CheckedTextView[@text='Services Agreement']",
+          "waitFor": "presence"
+        },
+        {
+          "name": "articles",
+          "screen": "learn",
+          "identifier": "id",
+          "value": "thumbnail",
           "waitFor": "presence"
         }
       ]

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -307,7 +308,7 @@ public class BasePage {
                 } else {
                     driver.swipe(width - x_int, y_int, x_int, y_int, 1000);
                     _count++;
-                    System.out.println("Swipe Count :: " + _count);
+                    System.out.println("AndroidSwipe Count :: " + _count);
                 }
             } catch (Exception e) {
                 driver.swipe(width - 100, y_int + 100, x_int + 100, y_int + 100, 1000);

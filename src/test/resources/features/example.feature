@@ -6,13 +6,13 @@ Feature: Advice on how to plan and save tax
   so that I have a ton of money to spend at the end of the year
 
   Background:
-    Given user on home screen taps on menu
-    When user on menu screen taps on login
-    And user on login screen types mayank.gupta804@gmail.com into email
-    And user on login screen taps on next
-    And user on login screen types dcba4321 into password
-    And user on login screen taps on login
-    And user on home screen taps on plan
+#    Given user on home screen taps on menu
+#    When user on menu screen taps on login
+#    And user on login screen types mayank.gupta804@gmail.com into email
+#    And user on login screen taps on next
+#    And user on login screen types dcba4321 into password
+#    And user on login screen taps on login
+#    And user on home screen taps on plan
 
   @new
   Scenario: generic step example
@@ -102,13 +102,19 @@ Feature: Advice on how to plan and save tax
     And user on investMoney screen taps on next
     And user on investMoney screen taps on showMeButton
 
+    @exp
+    Scenario: generic step example 6
+#      Given user on home screen taps on menu
+#      And user on menu screen scrolls down and taps on servicesAgreement
 
+#    Given user on home screen swipes right to plan
+#      And user on home screen swipes left to learn
+#      And user on home screen scrolls down
+#      And user on home screen scrolls down
+#      And user on learn screen scrolls up and taps on articles
 
-
-
-
-
-
+#      this is causing an error.
+     And user on home screen swipes right and taps on saveTaxCard
 
 
 
