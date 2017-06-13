@@ -3,6 +3,9 @@ package utils;
 import exceptions.ElementNotPresentException;
 import interfaces.Scroll;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 
@@ -10,9 +13,11 @@ import org.openqa.selenium.WebElement;
 public class AndroidScroll implements Scroll {
 
     private AppiumDriver driver;
+    private TouchAction touchAction;
 
     public AndroidScroll(AppiumDriver driver) {
         this.driver = driver;
+        this.touchAction = new TouchAction(driver);
     }
 
     @Override

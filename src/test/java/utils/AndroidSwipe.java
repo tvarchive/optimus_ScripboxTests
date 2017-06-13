@@ -5,6 +5,7 @@ import interfaces.Swipe;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class AndroidSwipe implements Swipe {
 

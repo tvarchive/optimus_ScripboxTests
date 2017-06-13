@@ -1,0 +1,30 @@
+{
+  "executionDetails": {
+    "appium_js_path": "/usr/local/bin/appium",
+    "appium_node_path": "/usr/local/bin/node",
+    "monitoring": true
+  },
+  "testFeed":[
+    {
+      "belongsTo":"traveller",
+      "runsOn": "any",
+      "appDir": "app",
+      "nativeApp":true,
+      "optimusDesiredCapabilities": {
+        "appiumServerCapabilities": {
+          "app": "makeMyTrip.apk",
+          "platformName": "Android"
+        },
+        "androidOnlyCapabilities": {
+          "appActivity": "com.mmt.travel.app.home.ui.SplashActivity",
+          "appPackage": "com.makemytrip",
+          "avdLaunchTimeout": 300000,
+          "useKeystore": false
+        }
+      },
+      "deviceState": {
+        "captureVideo": true
+      }
+    }
+  ]
+}

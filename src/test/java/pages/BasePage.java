@@ -117,8 +117,7 @@ public class BasePage {
         wait.until(elementToBeChecked(element));
     }
 
-    private static ExpectedCondition<WebElement> elementToBeChecked(
-            final WebElement element) {
+    private static ExpectedCondition<WebElement> elementToBeChecked(final WebElement element) {
         return new ExpectedCondition<WebElement>() {
 
             public ExpectedCondition<WebElement> visibilityOfElement =
@@ -179,14 +178,6 @@ public class BasePage {
         } catch (WebDriverException e) {
         }
     }
-
-//    public void scrollTo(String text) {
-//        try {
-//            riderDriver.scrollTo(text);
-//        } catch (WebDriverException e) {
-//
-//        }
-//    }
 
     public void scrollTo(String text) {
         scrollDownTo(text);

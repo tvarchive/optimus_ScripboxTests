@@ -16,4 +16,5 @@ public interface Scroll {
     void up();
 
     void down();
+
 }

@@ -1,0 +1,30 @@
+{
+  "executionDetails": {
+    "appium_js_path": "/usr/local/bin/appium",
+    "appium_node_path": "/usr/local/bin/node",
+    "monitoring": true
+  },
+  "testFeed":[
+    {
+      "belongsTo":"user",
+      "runsOn": "device",
+      "appDir": "app",
+      "nativeApp":true,
+      "optimusDesiredCapabilities": {
+        "appiumServerCapabilities": {
+          "app": "miniCabit.apk",
+          "platformName": "Android"
+        },
+        "androidOnlyCapabilities": {
+          "appActivity": "com.softheme.minicabit.activity.SplashActivity",
+          "appPackage": "com.minicabit.android",
+          "avdLaunchTimeout": 300000,
+          "useKeystore": false
+        }
+      },
+      "deviceState": {
+        "captureVideo": true
+      }
+    }
+  ]
+}

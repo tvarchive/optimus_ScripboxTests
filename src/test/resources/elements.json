@@ -473,6 +473,232 @@
           "waitFor": "presence"
         }
       ]
+    },
+
+
+
+    {
+      "app": "makeMyTrip.apk",
+      "elements": [
+        {
+          "name": "moveToNextScreen",
+          "screen": "splash",
+          "identifier": "id",
+          "value": "layout_onboarding_right_img_vw",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "skip",
+          "screen": "splash",
+          "identifier": "id",
+          "value": "layout_onboarding_skip_txt_vw",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "grantPermission",
+          "screen": "home",
+          "identifier": "id",
+          "value": "com.android.packageinstaller:id/permission_allow_button",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "referAFriend",
+          "screen": "home",
+          "identifier": "id",
+          "value": "refer_earn_banner_linearlayout",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "flights",
+          "screen": "home",
+          "identifier": "id",
+          "value": "activity_home_launcher_flights_imgvw",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "fromCity",
+          "screen": "flights",
+          "identifier": "id",
+          "value": "froCityLayout",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "city",
+          "screen": "citySelector",
+          "identifier": "id",
+          "value": "city_edit_text",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "cityPicker",
+          "screen": "citySelector",
+          "identifier": "id",
+          "value": "cityPickerRow",
+          "waitFor": "presence"
+        },
+        {
+          "name": "class",
+          "screen": "flights",
+          "identifier": "id",
+          "value": "classLayout",
+          "waitFor": "presence"
+        },
+        {
+          "name": "economyClass",
+          "screen": "class",
+          "identifier": "id",
+          "value": "economyClass",
+          "waitFor": "presence"
+        },
+        {
+          "name": "departureDate",
+          "screen": "flights",
+          "identifier": "id",
+          "value": "depDateLayout",
+          "waitFor": "presence"
+        },
+        {
+          "name": "9",
+          "screen": "calendar",
+          "identifier": "xpath",
+          "value": "//android.widget.CheckedTextView[@text=9]",
+          "waitFor": "presence"
+        }
+      ]
+    },
+
+
+
+    {
+      "app": "miniCabit.apk",
+      "elements": [
+        {
+          "name": "departureTime",
+          "screen": "home",
+          "identifier": "id",
+          "value": "collapsedFromPanel",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "increaseMonth",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "decreaseMonth",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.Button[@index=0]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "month",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.EditText",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "increaseDay",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "day",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.EditText",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "decreaseDay",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "decreaseYear",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=2]/android.widget.Button[@index=0]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "year",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=2]/android.widget.EditText",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "increaseYear",
+          "screen": "date",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=2]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "setDate",
+          "screen": "date",
+          "identifier": "id",
+          "value": "date_picker_set_btn",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "hour",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.EditText",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "decreaseHour",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.Button[@index=0]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "increaseHour",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=0]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "minutes",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.EditText",
+          "waitFor": "visibility"
+        },
+        {
+          "name": "increaseMinutes",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.Button[@index=2]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "decreaseMinutes",
+          "screen": "time",
+          "identifier": "xpath",
+          "value": "//android.widget.NumberPicker[@index=1]/android.widget.Button[@index=0]",
+          "waitFor": "presence"
+        },
+        {
+          "name": "setTime",
+          "screen": "time",
+          "identifier": "id",
+          "value": "time_picker_set_btn",
+          "waitFor": "visibility"
+        }
+      ]
     }
   ]
 }

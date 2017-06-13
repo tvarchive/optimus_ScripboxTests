@@ -13,7 +13,8 @@
       "optimusDesiredCapabilities": {
         "appiumServerCapabilities": {
           "app": "scripbox.apk",
-          "platformName": "Android"
+          "platformName": "Android",
+          "udid":"dakgbdajhfbhjasb"
         },
         "androidOnlyCapabilities": {
           "appActivity": "com.scripbox.takecharge.activities.SplashScreen",
