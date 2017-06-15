@@ -1,0 +1,58 @@
+{
+  "elements":[
+    {
+      "name": "letsGetStarted",
+      "identifier": "id",
+      "value": "lets_get_started_button_compare_step0",
+      "waitFor": "presence"
+    },
+    {
+      "name": "nextButton",
+      "identifier": "id",
+      "value": "lets_get_started_button_compare_step0",
+      "waitFor": "presence"
+    },
+    {
+      "name": "age",
+      "identifier": "id",
+      "value": "age_20_to_30",
+      "waitFor": "presence"
+    },
+    {
+      "name": "city",
+      "identifier": "id",
+      "value": "top_metros",
+      "waitFor": "presence"
+    },
+    {
+      "name": "savingPercentage",
+      "identifier": "id",
+      "value": "twenty_thirty_percent",
+      "waitFor": "presence"
+    },
+    {
+      "name": "longTermInvestment",
+      "identifier": "id",
+      "value": "long_term_fixed_deposit",
+      "waitFor": "presence"
+    },
+    {
+      "name": "shortTermInvestment",
+      "identifier": "id",
+      "value": "short_term_debt_mutual_funds",
+      "waitFor": "presence"
+    },
+    {
+      "name": "insurance",
+      "identifier": "id",
+      "value": "insurance_yes",
+      "waitFor": "presence"
+    },
+    {
+      "name": "savingTax",
+      "identifier": "id",
+      "value": "life_insurance",
+      "waitFor": "presence"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "elements":[
+    {
+      "name": "articles",
+      "identifier": "id",
+      "value": "thumbnail",
+      "waitFor": "presence"
+    }
+  ]
+}

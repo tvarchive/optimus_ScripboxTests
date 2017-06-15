@@ -1,9 +1,9 @@
 package steps;
 
 import com.testvagrant.optimus.device.OptimusController;
-import com.testvagrant.optimus.steps.BaseSteps;
-import com.testvagrant.optimus.steps.OptimusImpl;
 import com.testvagrant.optimus.utils.JsonUtil;
+import com.testvagrant.stepdefs.steps.BaseSteps;
+import com.testvagrant.stepdefs.steps.OptimusImpl;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

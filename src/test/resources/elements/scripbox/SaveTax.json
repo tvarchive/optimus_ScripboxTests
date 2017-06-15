@@ -1,0 +1,50 @@
+{
+  "elements":[
+    {
+      "name": "letsGetStarted",
+      "identifier": "id",
+      "value": "next_button_for_tax_step1",
+      "waitFor": "presence"
+    },
+    {
+      "name": "annualCTC",
+      "referTo":"seekBar"
+    },
+    {
+      "name": "nextButton",
+      "identifier": "id",
+      "value": "next_button",
+      "waitFor": "presence"
+    },
+    {
+      "name": "switchConveyance",
+      "identifier": "id",
+      "value": "switch_conveyance",
+      "waitFor": "presence"
+    },
+    {
+      "name": "switchMedical",
+      "identifier": "id",
+      "value": "switch_medical",
+      "waitFor": "presence"
+    },
+    {
+      "name": "rent",
+      "referTo":"seekBar"
+    },
+    {
+      "name": "hra",
+      "referTo":"seekBar"
+    },
+    {
+      "name": "epf",
+      "referTo":"seekbar"
+    },
+    {
+      "name": "homeLoan",
+      "identifier": "id",
+      "value": "switch_loan",
+      "waitFor": "presence"
+    }
+  ]
+}

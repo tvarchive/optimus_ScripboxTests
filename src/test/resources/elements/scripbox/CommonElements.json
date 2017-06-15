@@ -1,0 +1,10 @@
+{
+  "elements":[
+    {
+      "name": "seekBar",
+      "identifier": "id",
+      "value": "seek_bar",
+      "waitFor": "presence"
+    }
+  ]
+}

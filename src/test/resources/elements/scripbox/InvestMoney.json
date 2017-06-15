@@ -1,0 +1,50 @@
+{
+  "elements":[
+    {
+      "name": "investMoneyEveryMonth",
+      "identifier": "id",
+      "value": "sip_card",
+      "waitFor": "presence"
+    },
+    {
+      "name": "investSlider",
+      "referTo":"seekBar"
+    },
+    {
+      "name": "nextButton",
+      "identifier": "id",
+      "value": "lets_get_started_button_compare_step0",
+      "waitFor": "presence"
+    },
+    {
+      "name": "letsGetStarted",
+      "identifier": "id",
+      "value": "lets_get_started_button_compare_step0",
+      "waitFor": "presence"
+    },
+    {
+      "name": "years",
+      "identifier": "id",
+      "value": "sip_tenure",
+      "waitFor": "presence"
+    },
+    {
+      "name": "yearSlider",
+      "identifier": "id",
+      "value": "picker",
+      "waitFor": "presence"
+    },
+    {
+      "name": "next",
+      "identifier": "id",
+      "value": "next_button_compare_step5",
+      "waitFor": "presence"
+    },
+    {
+      "name": "showMeButton",
+      "identifier": "id",
+      "value": "show_me_more_compare_step5",
+      "waitFor": "presence"
+    }
+  ]
+}

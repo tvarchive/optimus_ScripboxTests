@@ -75,10 +75,7 @@
         },
         {
           "name": "annualCTC",
-          "screen": "saveTax",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "nextButton",
@@ -103,24 +100,15 @@
         },
         {
           "name": "rent",
-          "screen": "saveTax",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "hra",
-          "screen": "saveTax",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "epf",
-          "screen": "saveTax",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "homeLoan",
@@ -159,10 +147,7 @@
         },
         {
           "name": "age",
-          "screen": "retirement",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "nextButton",
@@ -173,10 +158,7 @@
         },
         {
           "name": "familyIncome",
-          "screen": "retirement",
-          "identifier": "id",
-          "value": "seek_bar",
-          "waitFor": "presence"
+          "reference":"Seekbar"
         },
         {
           "name": "ihaveMore",

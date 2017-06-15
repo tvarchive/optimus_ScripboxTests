@@ -1,0 +1,34 @@
+{
+  "elements":[
+    {
+      "name": "email",
+      "identifier": "id",
+      "value": "login_register_email",
+      "waitFor": "presence"
+    },
+    {
+      "name": "password",
+      "identifier": "id",
+      "value": "login_register_password",
+      "waitFor": "presence"
+    },
+    {
+      "name": "next",
+      "identifier": "id",
+      "value": "next_button_to_check_email_type",
+      "waitFor": "presence"
+    },
+    {
+      "name": "login",
+      "identifier": "id",
+      "value": "login_register_submit",
+      "waitFor": "presence"
+    },
+    {
+      "name": "investMoneyCard",
+      "identifier": "id",
+      "value": "compare_investment_card",
+      "waitFor": "presence"
+    }
+  ]
+}

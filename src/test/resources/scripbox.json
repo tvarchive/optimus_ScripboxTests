@@ -7,14 +7,13 @@
   "testFeed":[
     {
       "belongsTo":"user",
-      "runsOn": "any",
+      "runsOn": "device",
       "appDir": "app",
       "nativeApp":true,
       "optimusDesiredCapabilities": {
         "appiumServerCapabilities": {
           "app": "scripbox.apk",
-          "platformName": "Android",
-          "udid":"dakgbdajhfbhjasb"
+          "platformName": "Android"
         },
         "androidOnlyCapabilities": {
           "appActivity": "com.scripbox.takecharge.activities.SplashScreen",

@@ -50,6 +50,7 @@ dependencies {
     compile('com.testvagrant.optimus:optimus:1.0-SNAPSHOT') {
         changing true
     }
+    compile 'com.testvagrant.optimus:StepDefs:1.0-SNAPSHOT'
     testCompile('com.google.inject:guice:3.0')
     testCompile(group: 'com.googlecode.lambdaj', name: 'lambdaj', version: '2.3.3')
     testCompile(group: 'org.json', name: 'json', version: '20131018')
