@@ -10,7 +10,7 @@ import cucumber.api.java.en.Given;
 import static com.testvagrant.stepdefs.core.Tapster.tapster;
 
 
-public class GenericSteps1 extends BaseSteps{
+public class GenericSteps1 extends BaseSteps {
     @Given("^(\\w+)\\s+on\\s+(\\w+)\\s+screen\\s+(\\w+)\\s+on\\s+(\\w+)\\s+value\\s+(.*)$")
     public void consumerOnScreenPerformsActionOnElementWithValue(String consumer, String screen, String action, String element, String value) throws NoSuchEventException, OptimusException {
         tapster().useDriver(getDriverInstanceFor(consumer))
@@ -24,11 +24,33 @@ public class GenericSteps1 extends BaseSteps{
 
     @And("^(\\w+)\\s+on\\s+(\\w+)\\s+screen\\s+(\\w+)\\s+on\\s+(\\w+)$")
     public void consumerOnScreenPerformsActionOnElement(String consumer, String screen, String action, String element) throws OptimusException, NoSuchEventException {
-       tapster().useDriver(getDriverInstanceFor(consumer))
-               .onScreen(screen)
-               .asConsumer(consumer)
-               .onElement(element)
-               .doAction(action)
-               .serve();
+        tapster().useDriver(getDriverInstanceFor(consumer))
+                .onScreen(screen)
+                .asConsumer(consumer)
+                .onElement(element)
+                .doAction(action)
+                .serve();
+    }
+
+    @And("^(\\w+)\\s+on\\s+(\\w+)\\sscreen verifies\\s+(\\w+)\\s+is(.*)$")
+    public  void  assertelement(String consumer, String screen, String element, String action) throws OptimusException, NoSuchEventException {
+        tapster().useDriver(getDriverInstanceFor(consumer))
+                .onScreen(screen)
+                .asConsumer(consumer)
+                .onElement(element)
+                .doAction(action)
+                .serve();
+    }
+
+
+    @And("^(\\w+)\\s+on\\s+(\\w+)\\sscreen verifies\\s+(\\w+)\\s+has\\s+(\\w+)\\s+value\\s+(.*)$")
+    public  void  assertelementwithvalue(String consumer, String screen, String element, String action,String value) throws OptimusException, NoSuchEventException {
+        tapster().useDriver(getDriverInstanceFor(consumer))
+                .onScreen(screen)
+                .asConsumer(consumer)
+                .onElement(element)
+                .doAction(action)
+                .withValue(value)
+                .serve();
     }
 }
